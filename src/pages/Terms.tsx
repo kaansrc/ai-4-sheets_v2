@@ -80,8 +80,8 @@ const Terms = () => {
               <h2 className="text-2xl font-semibold mt-8 mb-4">10. Contact</h2>
               <p className="mb-6">
                 For any questions regarding these terms, please contact{" "}
-                <a href="mailto:help@crowise.ai" className="text-primary hover:underline">
-                  help@crowise.ai
+                <a href="support@ai4sheets.com" className="text-primary hover:underline">
+                  support@ai4sheets.com
                 </a>
               </p>
 
