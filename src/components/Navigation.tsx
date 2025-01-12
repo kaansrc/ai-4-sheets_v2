@@ -9,17 +9,9 @@ export const Navigation = () => {
             src="/logo.png" 
             alt="AI for Sheets Logo" 
             className="h-14 w-auto"
-            style={{ maxWidth: 'none' }} // This prevents the image from being constrained
+            style={{ maxWidth: 'none' }}
           />
         </Link>
-        <div className="flex gap-6">
-          <Link to="/privacy" className="text-secondary/80 hover:text-secondary transition">
-            Privacy Policy
-          </Link>
-          <Link to="/terms" className="text-secondary/80 hover:text-secondary transition">
-            Terms
-          </Link>
-        </div>
       </div>
     </nav>
   );
