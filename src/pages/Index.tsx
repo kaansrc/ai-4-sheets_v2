@@ -44,9 +44,9 @@ const Index = () => {
               <h2 className="text-3xl font-bold text-center mb-12">
                 How It Works
               </h2>
-              <div className="aspect-w-16 aspect-h-9">
+              <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
                 <iframe
-                  className="w-full h-full rounded-lg shadow-lg"
+                  className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
                   src="https://www.youtube.com/embed/eE_pywET2PI?si=a0Zz3e71yVGKpDda"
                   title="How AI for Sheets Works"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
