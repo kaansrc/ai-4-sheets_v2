@@ -4,10 +4,10 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 
 const features = [
-  "Transform your data with AI-powered analysis",
-  "Automate repetitive tasks with smart formulas",
-  "Generate insights from your spreadsheet data",
-  "Seamless integration with Google Sheets",
+  "🔄 Multiple AI Providers - Choose between OpenAI™, Claude, or Google Gemini™",
+  "⚡ Ready-to-Use Functions - 11 powerful functions for analysis and insights",
+  "🎯 Custom Controls - Fine-tune AI responses with adjustable settings",
+  "Seamless integration with Google Sheets™",
 ];
 
 const Index = () => {
@@ -21,13 +21,17 @@ const Index = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center animate-fade-up">
               <h1 className="text-4xl md:text-6xl font-bold text-secondary mb-6">
-                Supercharge Your Spreadsheets with AI
+                Transform Your Google Sheets™ with Multiple AI Providers
               </h1>
               <p className="text-xl text-secondary/80 mb-8">
-                Transform your Google Sheets experience with powerful AI capabilities. Analyze, automate, and gain insights from your data effortlessly.
+                Seamlessly integrate OpenAI™, Claude, and Google Gemini™ directly in your spreadsheets. Use powerful AI functions with your preferred provider's API key.
               </p>
-              <Button size="lg" className="bg-primary hover:bg-primary/90">
-                Get Started <ArrowRight className="ml-2 h-5 w-5" />
+              <Button 
+                size="lg" 
+                className="bg-primary hover:bg-primary/90"
+                onClick={() => window.open('https://workspace.google.com/marketplace/app/ai_for_sheets_gpt_claude_gemini/839333999405', '_blank')}
+              >
+                Install Now <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </div>
           </div>
@@ -38,7 +42,7 @@ const Index = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto">
               <h2 className="text-3xl font-bold text-center mb-12">
-                Everything you need to work smarter
+                Powerful Features
               </h2>
               <div className="grid md:grid-cols-2 gap-8">
                 {features.map((feature, index) => (
@@ -50,6 +54,15 @@ const Index = () => {
                     <p className="text-secondary/80">{feature}</p>
                   </div>
                 ))}
+              </div>
+              <div className="text-center mt-12">
+                <Button 
+                  size="lg" 
+                  className="bg-primary hover:bg-primary/90"
+                  onClick={() => window.open('https://workspace.google.com/marketplace/app/ai_for_sheets_gpt_claude_gemini/839333999405', '_blank')}
+                >
+                  Get Started <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
               </div>
             </div>
           </div>

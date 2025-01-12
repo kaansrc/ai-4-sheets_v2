@@ -19,7 +19,7 @@ export default {
     },
     extend: {
       colors: {
-        primary: "#9b87f5",
+        primary: "#0F9D58", // Google Sheets green
         secondary: "#1A1F2C",
         accent: "#7E69AB",
       },
