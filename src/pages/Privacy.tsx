@@ -68,8 +68,8 @@ const Privacy = () => {
               <h2 className="text-2xl font-semibold mt-8 mb-4">7. Contact</h2>
               <p className="mb-6">
                 For any questions regarding this privacy policy, please contact us at{" "}
-                <a href="mailto:help@crowise.ai" className="text-primary hover:underline">
-                  help@crowise.ai
+                <a href="mailto:support@ai4sheets.com" className="text-primary hover:underline">
+                  support@ai4sheets.com
                 </a>
               </p>
 
