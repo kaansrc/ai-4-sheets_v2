@@ -12,6 +12,14 @@ export const Navigation = () => {
             style={{ maxWidth: 'none' }} // This prevents the image from being constrained
           />
         </Link>
+        <div className="flex gap-6">
+          <Link to="/privacy" className="text-secondary/80 hover:text-secondary transition">
+            Privacy Policy
+          </Link>
+          <Link to="/terms" className="text-secondary/80 hover:text-secondary transition">
+            Terms
+          </Link>
+        </div>
       </div>
     </nav>
   );
