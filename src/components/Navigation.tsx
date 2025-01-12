@@ -11,7 +11,7 @@ export const Navigation = () => {
             className="h-14 w-auto"
             style={{ maxWidth: 'none' }} // This prevents the image from being constrained
           />
-        </div>
+        </Link>
       </div>
     </nav>
   );
