@@ -47,9 +47,10 @@ const Index = () => {
               <div className="aspect-w-16 aspect-h-9">
                 <iframe
                   className="w-full h-full rounded-lg shadow-lg"
-                  src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                  src="https://www.youtube.com/embed/eE_pywET2PI?si=a0Zz3e71yVGKpDda"
                   title="How AI for Sheets Works"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
                   allowFullScreen
                 ></iframe>
               </div>
