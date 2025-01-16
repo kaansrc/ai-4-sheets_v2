@@ -12,57 +12,52 @@ const Privacy = () => {
             <h1 className="text-4xl font-bold mb-8">Privacy Policy for AI for Sheets™</h1>
             <div className="prose max-w-none">
               <p className="text-lg text-secondary/80 mb-6">
-                Last updated: 01/10/2025
+                Last updated: 01/16/2025
               </p>
               
               <p className="mb-6">
-                This privacy policy describes how AI for Sheets™ ("the Add-on") handles information when you use our Google Workspace Add-on.
+                This privacy policy describes how AI for Sheets™ ("the Add-on") collects, uses, and protects your information when you use our Google Workspace Add-on.
               </p>
 
               <h2 className="text-2xl font-semibold mt-8 mb-4">1. Information Collection and Use</h2>
-              <p className="mb-4">The Add-on operates entirely on your device and within Google's infrastructure:</p>
+              <p className="mb-4">The Add-on collects and processes only the necessary information required for its functionality:</p>
               <ul className="list-disc pl-6 mb-6">
-                <li>The Add-on only processes Google Sheets™ data that you explicitly select when using our functions</li>
-                <li>API keys that you provide for AI services are stored solely in Google's secure infrastructure</li>
-                <li>Basic user settings and preferences are stored locally within Google's infrastructure</li>
+                <li>Google Sheets™ data that you choose to process using our functions</li>
+                <li>API keys that you provide for AI services</li>
+                <li>Basic user settings and preferences</li>
               </ul>
 
               <h2 className="text-2xl font-semibold mt-8 mb-4">2. Data Processing</h2>
               <ul className="list-disc pl-6 mb-6">
-                <li>All data processing occurs locally on your device through the Google Sheets interface</li>
-                <li>We maintain no servers and do not collect, store, or process any user data on our infrastructure</li>
-                <li>The Add-on functions as a bridge between your Google Sheet and your chosen AI service</li>
-                <li>Spreadsheet data is processed only when you explicitly use our functions and is never stored or transmitted to us</li>
+                <li>All data processing occurs through official Google Workspace™ and user-provided AI service APIs</li>
+                <li>No data is stored on our servers</li>
+                <li>API keys are stored securely in Google's infrastructure</li>
+                <li>Spreadsheet data is processed only when you explicitly use our functions</li>
               </ul>
 
               <h2 className="text-2xl font-semibold mt-8 mb-4">3. Data Security</h2>
               <ul className="list-disc pl-6 mb-6">
-                <li>The Add-on operates within Google's secure infrastructure</li>
-                <li>We never have access to your API keys, spreadsheet data, or user preferences</li>
-                <li>All communications between your device and AI services occur directly through their official APIs</li>
-                <li>We do not maintain any servers or databases that could store your information</li>
+                <li>We never store your API keys or spreadsheet data outside of Google's secure infrastructure</li>
+                <li>All communications are encrypted using industry-standard protocols</li>
+                <li>We do not have access to your stored API keys or processed data</li>
               </ul>
 
-              <h2 className="text-2xl font-semibold mt-8 mb-4">4. Data Sharing and Transfer</h2>
-              <p className="mb-4">Due to our client-side architecture:</p>
+              <h2 className="text-2xl font-semibold mt-8 mb-4">4. Data Sharing, Transfer, and Disclosure</h2>
+              <p className="mb-4">Your Google user data and API keys are handled in the following ways:</p>
               <ul className="list-disc pl-6 mb-6">
-                <li>We do not have the ability to share, transfer, or disclose your data as we never have access to it</li>
-                <li>Data processing occurs directly between:
-                  <ul className="list-disc pl-6 mt-2">
-                    <li>Your Google Sheet and your chosen AI service</li>
-                    <li>Your browser and Google's infrastructure</li>
-                  </ul>
-                </li>
-                <li>We do not act as an intermediary for any data transfers</li>
+                <li>Data is processed directly between your Google Sheet and the AI services you choose to use (OpenAI, Anthropic, or Google)</li>
+                <li>Google has access to necessary data to provide the Add-on functionality as part of the Google Workspace platform</li>
+                <li>We do not transfer or disclose your data to any other third parties</li>
+                <li>We may be required to share information if required by law, regulation, or valid legal process</li>
               </ul>
 
               <h2 className="text-2xl font-semibold mt-8 mb-4">5. Data Retention and Deletion</h2>
-              <p className="mb-4">As we do not collect or store any data:</p>
+              <p className="mb-4">We handle data retention and deletion in the following ways:</p>
               <ul className="list-disc pl-6 mb-6">
-                <li>All user preferences and API keys are stored solely within Google's infrastructure</li>
-                <li>Data is automatically removed when you uninstall the Add-on</li>
-                <li>No additional deletion requests are necessary as we maintain no user data</li>
-                <li>All processing is real-time and leaves no persistent data on our end</li>
+                <li>Your Google Sheets data is processed in real-time and is not stored persistently</li>
+                <li>API keys and preferences are stored in Google's infrastructure and are automatically deleted when you uninstall the Add-on</li>
+                <li>You can delete your API keys at any time through the Add-on settings</li>
+                <li>Since we don't maintain any servers or databases, no additional data deletion procedures are necessary</li>
               </ul>
 
               <h2 className="text-2xl font-semibold mt-8 mb-4">6. Third-Party Services</h2>
@@ -72,17 +67,13 @@ const Privacy = () => {
                 <li>Anthropic Claude API</li>
                 <li>Google Gemini™ API</li>
               </ul>
-              <p className="mb-4">When you use our functions:</p>
-              <ul className="list-disc pl-6 mb-6">
-                <li>You connect directly to these services using your own API keys</li>
-                <li>We do not intermediate these connections</li>
-                <li>You are responsible for reviewing and complying with these services' terms and conditions</li>
-              </ul>
+              <p className="mb-6">Users are responsible for complying with these services' terms and conditions.</p>
 
               <h2 className="text-2xl font-semibold mt-8 mb-4">7. User Rights</h2>
-              <p className="mb-4">Through Google's infrastructure, you can:</p>
+              <p className="mb-4">You have the right to:</p>
               <ul className="list-disc pl-6 mb-6">
                 <li>Access your stored preferences</li>
+                <li>Delete your stored preferences</li>
                 <li>Remove API keys</li>
                 <li>Uninstall the Add-on</li>
               </ul>
