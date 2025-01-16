@@ -52,10 +52,17 @@ const Privacy = () => {
               </ul>
 
               <h2 className="text-2xl font-semibold mt-8 mb-4">5. Data Retention and Deletion</h2>
-              <p className="mb-4">We handle data retention and deletion in the following ways:</p>
+              <p className="mb-4">Regarding Google user data (including spreadsheet content and related Google Workspace data):</p>
               <ul className="list-disc pl-6 mb-6">
-                <li>Your Google Sheets data is processed in real-time and is not stored persistently</li>
-                <li>API keys and preferences are stored in Google's infrastructure and are automatically deleted when you uninstall the Add-on</li>
+                <li>We do not retain or store any Google user data. All Google Sheets data is only processed in real-time when you use our functions</li>
+                <li>Google user data is immediately discarded after processing and is never persisted in any form</li>
+                <li>No Google user data needs to be deleted because we do not store it</li>
+                <li>When you uninstall the Add-on, all access to Google user data is immediately terminated</li>
+              </ul>
+              
+              <p className="mb-4">Regarding other Add-on data:</p>
+              <ul className="list-disc pl-6 mb-6">
+                <li>API keys and user preferences stored in Google's infrastructure are automatically deleted when you uninstall the Add-on</li>
                 <li>You can delete your API keys at any time through the Add-on settings</li>
                 <li>Since we don't maintain any servers or databases, no additional data deletion procedures are necessary</li>
               </ul>
