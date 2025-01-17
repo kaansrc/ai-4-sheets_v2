@@ -15,6 +15,9 @@ export const Footer = () => {
             <Link to="/terms" className="text-sm text-secondary/60 hover:text-secondary transition">
               Terms & Conditions
             </Link>
+            <Link to="/contact" className="text-sm text-secondary/60 hover:text-secondary transition">
+              Contact
+            </Link>
           </div>
         </div>
       </div>
