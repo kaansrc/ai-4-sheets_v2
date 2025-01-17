@@ -93,7 +93,7 @@ const Index = () => {
         <section className="py-20 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto">
-              <h2 className="text-3xl font-bold text-center mb-12">Meet Atlas</h2>
+              <h2 className="text-3xl font-bold text-center mb-12">Meet the maker of AI for Sheets. Atlas!</h2>
               
               <div className="flex flex-col md:flex-row gap-12 items-center mb-8">
                 <div className="w-full md:w-1/3">
@@ -112,24 +112,24 @@ const Index = () => {
                   </p>
                   
                   <p className="mb-4">
-                    One day, I asked my dad for a PlayStation 5. Instead of just buying it for me, he suggested something amazing - he said I could build my own product using AI and earn money to buy the PS5 myself! 
+                    One day, I asked my dad for a PlayStation 5. Instead of just buying it for me, he suggested something fun! He said I could build my own product using AI and earn money to buy the PS5 myself! I made this so you can get good responses, and I get money!
                   </p>
 
                   <p className="mb-4">
-                    With my dad's help, we started building AI for Sheets™. He helped me understand how AI works, and I've been improving the product ever since. Now, I'm not just working towards getting a PS5 - I'm learning about technology, business, and how to create something valuable!
+                    With my dad's idea and help, we started building AI for Sheets with Claude. He helped me understand how to work with AI, and I've been improving the product ever since. Now I'm learning about technology, coding, and how to create something useful!
                   </p>
 
                   <p className="mb-8">
-                    Every subscription helps me get closer to my PS5 goal while delivering a useful tool that helps people work smarter with their spreadsheets. Thank you for supporting my journey! 🎮
+                    Every donation helps me get closer to my PS5 goal. Thank you for supporting my journey! 🎮
                   </p>
 
                   <div className="text-center">
                     <Button 
                       size="lg" 
                       className="bg-primary hover:bg-primary/90"
-                      onClick={() => window.open('https://workspace.google.com/marketplace/app/ai_for_sheets_gpt_claude_gemini/839333999405', '_blank')}
+                      onClick={() => window.open('https://donate.stripe.com/8wM8yA4JvcB90WQ4gg', '_blank')}
                     >
-                      Support Atlas's Dream <ArrowRight className="ml-2 h-5 w-5" />
+                      Support My Project <ArrowRight className="ml-2 h-5 w-5" />
                     </Button>
                   </div>
                 </div>
