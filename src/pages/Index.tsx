@@ -88,6 +88,26 @@ const Index = () => {
             </div>
           </div>
         </section>
+
+        {/* About Section */}
+        <section className="py-20 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-3xl mx-auto text-center">
+              <h2 className="text-3xl font-bold mb-8">About AI for Sheets™</h2>
+              <div className="prose max-w-none text-secondary/80">
+                <p className="mb-6">
+                  AI for Sheets™ was created by a team of data enthusiasts and spreadsheet power users who saw the potential to revolutionize how people work with data in Google Sheets™. We believe in making advanced AI capabilities accessible to everyone, regardless of their technical expertise.
+                </p>
+                <p className="mb-6">
+                  Our mission is to empower users with the flexibility to choose their preferred AI provider while maintaining complete control over their data and API keys. Whether you're conducting data analysis, generating content, or automating workflows, AI for Sheets™ provides the tools you need to work more efficiently.
+                </p>
+                <p>
+                  We're committed to continuous improvement and regularly update our add-on with new features based on user feedback. Join our growing community of users who are transforming their spreadsheet workflows with AI.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       <Footer />
