@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 
 const features = [
-  "🔄 Multiple AI Providers - Choose between OpenAI™, Claude, or Google Gemini™",
+  "🔄 Multiple AI Providers - Choose between OpenAI™, Claude, or Google Gemini",
   "⚡ Ready-to-Use Functions - 11 powerful functions for analysis and insights",
   "🎯 Custom Controls - Fine-tune AI responses with adjustable settings",
   "Seamless integration with Google Sheets™",
