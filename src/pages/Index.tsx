@@ -47,7 +47,7 @@ const Index = () => {
               <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
                 <iframe
                   className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
-                  src="https://www.youtube.com/embed/Qx1rv-TrJRc"
+                  src="https://www.youtube.com/embed/VDQcIBVfBqo"
                   title="How AI for Sheets Works"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   referrerPolicy="strict-origin-when-cross-origin"
@@ -137,6 +137,27 @@ const Index = () => {
             </div>
           </div>
         </section>
+
+        {/* Learn from Atlas Section */}
+<section className="py-20 bg-white">
+  <div className="container mx-auto px-4">
+    <div className="max-w-4xl mx-auto">
+      <h2 className="text-3xl font-bold text-center mb-12">
+        Learn More About AI for Sheets
+      </h2>
+      <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+        <iframe
+          className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
+          src="https://www.youtube.com/embed/Qx1rv-TrJRc"
+          title="Learn About AI for Sheets"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>
       </main>
 
       <Footer />
