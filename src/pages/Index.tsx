@@ -143,7 +143,7 @@ const Index = () => {
   <div className="container mx-auto px-4">
     <div className="max-w-4xl mx-auto">
       <h2 className="text-3xl font-bold text-center mb-12">
-        Learn More About AI for Sheets
+        Learn AI for Sheets from the Maker!
       </h2>
       <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
         <iframe
