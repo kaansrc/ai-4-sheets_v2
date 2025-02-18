@@ -314,39 +314,12 @@ const BrickBreaker = () => {
     window.addEventListener('keyup', e => handleKey(e, false));
     window.addEventListener('mousemove', handleMouse);
     
-    return () => {
-      window.removeEventListener('keydown', e => handleKey(e, true));
-      window.removeEventListener('keyup', e => handleKey(e, false));
-      window.removeEventListener('mousemove', handleMouse);
-    };
-  }, []);
-
-  const startGame = () => {
-    const canvas = canvasRef.current;
-    gameState.current = {
-      balls: [createBall(canvas.width / 2, canvas.height - 30)],
-      paddleX: (canvas.width - config.paddle.width) / 2,
-      paddleWidth: config.paddle.width,
-      bricks: initializeBricks(),
-      powerUps: [],
-      rightPressed: false,
-      leftPressed: false,
-      flameBall: false,
-      slowMotion: false
-    };
-    setScore(0);
-    setGameOver(false);
-    setGameStarted(true);
-    setActivePowerUps([]);
-  };
-
   return (
     <div className="flex flex-col items-center justify-center bg-gray-100 p-4">
       <div className="bg-white rounded-lg shadow-lg p-6 w-full max-w-2xl">
         <div className="flex justify-between items-center mb-4">
           <div className="flex items-center gap-4">
             <h1 className="text-2xl font-bold text-gray-800">Brick Breaker</h1>
-            <span className="text-lg text
             <span className="text-lg text-gray-600">Level: {level}</span>
           </div>
           <div className="flex items-center gap-4">
