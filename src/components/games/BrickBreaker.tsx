@@ -307,13 +307,23 @@ const BrickBreaker = () => {
       const newX = relativeX - gameState.current.paddleWidth / 2;
       
       // Constrain paddle position to canvas boundaries
-      gameState.current.paddleX = Math.max(0, Math.min(newX, canvas.width - gameState.current.paddleWidth));
+      if (canvasRef.current) {
+        gameState.current.paddleX = Math.max(0, Math.min(newX, canvasRef.current.width - gameState.current.paddleWidth));
+      }
     };
 
     window.addEventListener('keydown', e => handleKey(e, true));
     window.addEventListener('keyup', e => handleKey(e, false));
     window.addEventListener('mousemove', handleMouse);
     
+    // Return cleanup function
+    return () => {
+      window.removeEventListener('keydown', e => handleKey(e, true));
+      window.removeEventListener('keyup', e => handleKey(e, false));
+      window.removeEventListener('mousemove', handleMouse);
+    };
+  }, []); // Empty dependency array since we're using refs
+
   return (
     <div className="flex flex-col items-center justify-center bg-gray-100 p-4">
       <div className="bg-white rounded-lg shadow-lg p-6 w-full max-w-2xl">
