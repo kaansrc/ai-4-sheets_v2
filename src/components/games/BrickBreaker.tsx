@@ -11,67 +11,6 @@ const BrickBreaker = () => {
   const [level, setLevel] = useState(1);
   const [showLevelScreen, setShowLevelScreen] = useState(false);
 
-  // Rest of your game code...
-  // Paste the entire game code here, starting from const config = {...}
-  // up until the final return statement
-
-  return (
-    <div className="flex flex-col items-center justify-center bg-gray-100 p-4">
-      <div className="bg-white rounded-lg shadow-lg p-6 w-full max-w-2xl">
-        <div className="flex justify-between items-center mb-4">
-          <div className="flex items-center gap-4">
-            <h1 className="text-2xl font-bold text-gray-800">Brick Breaker</h1>
-            <span className="text-lg text-gray-600">Level: {level}</span>
-          </div>
-          <div className="flex items-center gap-4">
-            <button onClick={() => setIsMuted(!isMuted)} className="p-2 rounded-full hover:bg-gray-100">
-              {isMuted ? <VolumeX size={24} /> : <Volume2 size={24} />}
-            </button>
-            <span className="text-lg font-semibold">Score: {score}</span>
-          </div>
-        </div>
-        <div className="relative">
-          <canvas ref={canvasRef} width={480} height={320} className="w-full h-auto bg-gray-50 rounded-lg" />
-          {(!gameStarted || showLevelScreen) && (
-            <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 rounded-lg">
-              <div className="text-center text-white p-4">
-                <h2 className="text-2xl font-bold mb-2">
-                  {gameOver ? 'Game Over!' : showLevelScreen ? `Level ${level} Complete!` : 'Ready to Play?'}
-                </h2>
-                <p className="mb-4">
-                  {gameOver ? `Final Score: ${score}` : 
-                   showLevelScreen ? `Score: ${score} - Get ready for increased difficulty!` :
-                   'Use arrow keys or mouse to control the paddle'}
-                </p>
-                {showLevelScreen && (
-                  <div className="mb-4 text-sm">
-                    <p>• Faster ball speed</p>
-                    <p>• More rows of bricks</p>
-                    <p>• Fewer power-ups</p>
-                  </div>
-                )}
-                <button 
-                  onClick={() => {
-                    if (showLevelScreen) {
-                      setShowLevelScreen(false);
-                    }
-                    startGame();
-                  }} 
-                  className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-full font-semibold transition-colors"
-                >
-                  {gameOver ? 'Play Again' : showLevelScreen ? 'Start Next Level' : 'Start Game'}
-                </button>
-              </div>
-            </div>
-          )}
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default BrickBreaker;
-
   const config = {
     paddle: { height: 10, width: 75 },
     ball: { radius: 5, baseSpeed: 3 },
@@ -402,11 +341,12 @@ export default BrickBreaker;
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
+    <div className="flex flex-col items-center justify-center bg-gray-100 p-4">
       <div className="bg-white rounded-lg shadow-lg p-6 w-full max-w-2xl">
         <div className="flex justify-between items-center mb-4">
           <div className="flex items-center gap-4">
             <h1 className="text-2xl font-bold text-gray-800">Brick Breaker</h1>
+            <span className="text-lg text
             <span className="text-lg text-gray-600">Level: {level}</span>
           </div>
           <div className="flex items-center gap-4">
@@ -443,7 +383,7 @@ export default BrickBreaker;
                     }
                     startGame();
                   }} 
-                  className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-full font-semibold transition-colors"
+                  className="bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-full font-semibold transition-colors"
                 >
                   {gameOver ? 'Play Again' : showLevelScreen ? 'Start Next Level' : 'Start Game'}
                 </button>
