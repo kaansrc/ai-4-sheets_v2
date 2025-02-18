@@ -121,6 +121,31 @@ const BrickBreaker = () => {
     }, config.powerUpDuration);
   };
 
+    const startGame = () => {
+    // Reset game state
+    setGameOver(false);
+    setGameStarted(true);
+    if (!showLevelScreen) {
+      setScore(0);
+      setLevel(1);
+    }
+    
+    // Initialize paddle position
+    const canvas = canvasRef.current;
+    gameState.current = {
+      ...gameState.current,
+      paddleX: (canvas.width - config.paddle.width) / 2,
+      paddleWidth: config.paddle.width,
+      balls: [createBall(canvas.width / 2, canvas.height - 30)],
+      bricks: initializeBricks(),
+      powerUps: [],
+      rightPressed: false,
+      leftPressed: false,
+      flameBall: false,
+      slowMotion: false
+    };
+  };
+  
   const draw = () => {
     if (!canvasRef.current || !gameStarted) return;
     const canvas = canvasRef.current;
@@ -333,14 +358,22 @@ const BrickBreaker = () => {
             <span className="text-lg text-gray-600">Level: {level}</span>
           </div>
           <div className="flex items-center gap-4">
-            <button onClick={() => setIsMuted(!isMuted)} className="p-2 rounded-full hover:bg-gray-100">
+            <button 
+              onClick={() => setIsMuted(!isMuted)} 
+              className="p-2 rounded-full hover:bg-gray-100"
+            >
               {isMuted ? <VolumeX size={24} /> : <Volume2 size={24} />}
             </button>
             <span className="text-lg font-semibold">Score: {score}</span>
           </div>
         </div>
         <div className="relative">
-          <canvas ref={canvasRef} width={480} height={320} className="w-full h-auto bg-gray-50 rounded-lg" />
+          <canvas 
+            ref={canvasRef} 
+            width={480} 
+            height={320} 
+            className="w-full h-auto bg-gray-50 rounded-lg" 
+          />
           {(!gameStarted || showLevelScreen) && (
             <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 rounded-lg">
               <div className="text-center text-white p-4">
@@ -366,7 +399,7 @@ const BrickBreaker = () => {
                     }
                     startGame();
                   }} 
-                  className="bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-full font-semibold transition-colors"
+                  className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-full font-semibold transition-colors"
                 >
                   {gameOver ? 'Play Again' : showLevelScreen ? 'Start Next Level' : 'Start Game'}
                 </button>
