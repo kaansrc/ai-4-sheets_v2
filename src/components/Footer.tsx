@@ -9,6 +9,9 @@ export const Footer = () => {
             © {new Date().getFullYear()} AI for Sheets. All rights reserved.
           </p>
           <div className="flex gap-6">
+            <Link to="/games" className="text-sm text-secondary/60 hover:text-secondary transition">
+              Games
+            </Link>
             <Link to="/privacy" className="text-sm text-secondary/60 hover:text-secondary transition">
               Privacy Policy
             </Link>
