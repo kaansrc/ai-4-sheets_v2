@@ -2,6 +2,7 @@ import { Navigation } from "../components/Navigation";
 import { Footer } from "../components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import PaymentSuccessModal from "../components/PaymentSuccessModal";
 
 const features = [
   "🔄 Multiple AI Providers - Choose between OpenAI™, Claude, or Google Gemini",
@@ -11,8 +12,11 @@ const features = [
 ];
 
 const Index = () => {
+  // Check for ?success in the query string
+  const showSuccess = typeof window !== 'undefined' && window.location.search.includes('success');
   return (
     <div className="min-h-screen flex flex-col">
+      {showSuccess && <PaymentSuccessModal open={true} />}
       <Navigation />
       
       <main className="flex-1 pt-20">
