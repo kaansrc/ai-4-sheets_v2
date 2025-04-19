@@ -6,7 +6,7 @@ export const Navigation = () => {
       <div className="container mx-auto px-4 py-2 flex justify-between items-center">
         <Link to="/" className="flex items-center">
           <img 
-            src="/logo.png" 
+            src="/logo-new.png" 
             alt="AI for Sheets Logo" 
             className="h-14 w-auto"
             style={{ maxWidth: 'none' }} // This prevents the image from being constrained
