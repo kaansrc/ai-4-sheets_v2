@@ -9,14 +9,14 @@ const Privacy = () => {
       <main className="flex-1 pt-32">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <h1 className="text-4xl font-bold mb-8">Privacy Policy for AI for Sheets™</h1>
+            <h1 className="text-4xl font-bold mb-8">Privacy Policy for AI4Sheets™</h1>
             <div className="prose max-w-none">
               <p className="text-lg text-secondary/80 mb-6">
-                Last updated: 01/16/2025
+                Last updated: 04/19/2025
               </p>
               
               <p className="mb-6">
-                This privacy policy describes how AI for Sheets™ ("the Add-on") collects, uses, and protects your information when you use our Google Workspace Add-on.
+                This privacy policy describes how AI4Sheets™ ("the Add-on") collects, uses, and protects your information when you use our Google Workspace Add-on.
               </p>
 
               <h2 className="text-2xl font-semibold mt-8 mb-4">1. Information Collection and Use</h2>
@@ -25,7 +25,11 @@ const Privacy = () => {
                 <li>Google Sheets™ data that you choose to process using our functions</li>
                 <li>API keys that you provide for AI services</li>
                 <li>Basic user settings and preferences</li>
+                <li>Your email address (for account and subscription management only)</li>
               </ul>
+              <p className="mb-4">
+                We do not use your email address for marketing purposes or share it with third parties, except as required for payment processing or by law.
+              </p>
 
               <h2 className="text-2xl font-semibold mt-8 mb-4">2. Data Processing</h2>
               <ul className="list-disc pl-6 mb-6">
@@ -67,14 +71,15 @@ const Privacy = () => {
                 <li>Since we don't maintain any servers or databases, no additional data deletion procedures are necessary</li>
               </ul>
 
-              <h2 className="text-2xl font-semibold mt-8 mb-4">6. Third-Party Services</h2>
+              <h2 className="text-2xl font-semibold mt-8 mb-4">6. Third-Party Services and Payments</h2>
               <p className="mb-4">The Add-on integrates with:</p>
               <ul className="list-disc pl-6 mb-6">
                 <li>OpenAI™ API</li>
                 <li>Anthropic Claude API</li>
                 <li>Google Gemini™ API</li>
               </ul>
-              <p className="mb-6">Users are responsible for complying with these services' terms and conditions.</p>
+              <p className="mb-4">Users are responsible for complying with these services' terms and conditions.</p>
+              <p className="mb-6">All payments are processed securely via Stripe. We do not store your credit card or payment details. Stripe’s privacy policy applies to all payment transactions.</p>
 
               <h2 className="text-2xl font-semibold mt-8 mb-4">7. User Rights</h2>
               <p className="mb-4">You have the right to:</p>

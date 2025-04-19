@@ -10,6 +10,7 @@ import Terms from "./pages/Terms";
 import Contact from "./pages/Contact";
 import Games from "./pages/Games";
 import BrickBreaker from "./pages/BrickBreaker";
+import Success from "./pages/success";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/games" element={<Games />} />
           <Route path="/games/brick-breaker" element={<BrickBreaker />} />
+          <Route path="/success" element={<Success />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
