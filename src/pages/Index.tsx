@@ -29,10 +29,11 @@ const Index = () => {
               <Button 
                 size="lg" 
                 className="bg-primary hover:bg-primary/90"
-                onClick={() => window.open('https://workspace.google.com/marketplace/app/ai_for_sheets_gpt_claude_gemini/839333999405', '_blank')}
+                onClick={() => window.open('https://workspace.google.com/marketplace/app/ai4sheets_ai_gpt_claude_gemini_email_fin/839333999405', '_blank')}
               >
-                Install Now <ArrowRight className="ml-2 h-5 w-5" />
+                Start Free – No Credit Card Required <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
+              <div className="text-sm text-secondary/60 mt-2">No credit card required.</div>
             </div>
           </div>
         </section>
@@ -250,8 +251,15 @@ const Index = () => {
                     </div>
                   </div>
                 </div>
-                <div className="text-center mt-6">
-                  <span className="inline-block bg-primary text-white rounded-full px-5 py-2 font-bold text-lg">Launch Offer: 50% off annual plan with code <span className="underline">OFF50</span></span>
+                <div className="text-center mt-10">
+                  <Button 
+                    size="lg"
+                    className="bg-primary hover:bg-primary/90 text-lg px-8 py-4"
+                    onClick={() => window.open('https://workspace.google.com/marketplace/app/ai4sheets_ai_gpt_claude_gemini_email_fin/839333999405', '_blank')}
+                  >
+                    Start Your 1 Month Free Trial
+                  </Button>
+                  <div className="text-sm text-secondary/60 mt-2">No credit card required.</div>
                 </div>
               </div>
             </div>
