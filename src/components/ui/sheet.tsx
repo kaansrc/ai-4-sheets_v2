@@ -84,7 +84,7 @@ const SheetHeader = ({
     {...props}
   />
 )
-SheetHeader.displayName = "SheetHeader"
+SheetHeader.displayName = "AI4Sheets SheetHeader"
 
 const SheetFooter = ({
   className,
@@ -98,7 +98,7 @@ const SheetFooter = ({
     {...props}
   />
 )
-SheetFooter.displayName = "SheetFooter"
+SheetFooter.displayName = "AI4Sheets SheetFooter"
 
 const SheetTitle = React.forwardRef<
   React.ElementRef<typeof SheetPrimitive.Title>,
@@ -110,7 +110,7 @@ const SheetTitle = React.forwardRef<
     {...props}
   />
 ))
-SheetTitle.displayName = SheetPrimitive.Title.displayName
+SheetTitle.displayName = "AI4Sheets SheetTitle"
 
 const SheetDescription = React.forwardRef<
   React.ElementRef<typeof SheetPrimitive.Description>,
@@ -122,7 +122,7 @@ const SheetDescription = React.forwardRef<
     {...props}
   />
 ))
-SheetDescription.displayName = SheetPrimitive.Description.displayName
+SheetDescription.displayName = "AI4Sheets SheetDescription"
 
 export {
   Sheet, SheetClose,
