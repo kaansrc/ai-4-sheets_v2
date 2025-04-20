@@ -8,7 +8,7 @@ export const Navigation = () => {
           <img 
             src="/logo-new.png" 
             alt="AI for Sheets Logo" 
-            className="h-14 w-auto"
+            className="h-10 sm:h-14 w-auto"
             style={{ maxWidth: 'none' }} // This prevents the image from being constrained
           />
         </Link>
@@ -19,7 +19,8 @@ export const Navigation = () => {
           className="ml-2 mr-2 sm:ml-4 sm:mr-0 px-4 py-2 sm:px-6 sm:py-2 rounded-full bg-primary text-white font-semibold shadow hover:bg-primary/90 transition-colors text-sm sm:text-base flex-shrink-0"
           style={{ maxWidth: '90vw', whiteSpace: 'nowrap' }}
         >
-          Download Now
+          <span className="sm:hidden">Download</span>
+          <span className="hidden sm:inline">Download Now</span>
         </a>
       </div>
     </nav>
