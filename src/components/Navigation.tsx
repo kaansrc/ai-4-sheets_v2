@@ -12,14 +12,14 @@ export const Navigation = () => {
             style={{ maxWidth: 'none' }} // This prevents the image from being constrained
           />
         </Link>
-        <div className="flex gap-6">
-          <Link to="/privacy" className="text-secondary/80 hover:text-secondary transition">
-            Privacy Policy
-          </Link>
-          <Link to="/terms" className="text-secondary/80 hover:text-secondary transition">
-            Terms
-          </Link>
-        </div>
+        <a
+          href="https://workspace.google.com/marketplace/app/ai4sheets_ai_gpt_claude_gemini_email_fin/839333999405"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="ml-4 px-6 py-2 rounded-full bg-primary text-white font-semibold shadow hover:bg-primary/90 transition-colors"
+        >
+          Download Now
+        </a>
       </div>
     </nav>
   );
